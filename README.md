@@ -8,7 +8,7 @@ This is a starter template for creating projects with React and TypeScript
 
 ```
 git clone https://github.com/justinherrera/react-template.git
-cd express-template
+cd react-template
 npm install
 ```
 
