@@ -1,4 +1,4 @@
-# Node Express MongoDB Template
+# React TypeScript Template
 
 This is a starter template for creating projects with React and TypeScript
 
