@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import AppRouter from '../src/routes/AppRouter';
 import { QueryClient, QueryClientProvider } from "react-query";
 
 const queryClient = new QueryClient()
@@ -8,7 +8,7 @@ const queryClient = new QueryClient()
 ReactDOM.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <App />
+        <AppRouter />
     </QueryClientProvider>
   </React.StrictMode>,
   document.getElementById('root')
