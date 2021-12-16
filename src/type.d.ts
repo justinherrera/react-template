@@ -9,3 +9,8 @@ type Posts = {
     data: Data[]
     map: (post: any) => any
 }
+
+type Post = {
+    id: number,
+    title: string,
+}

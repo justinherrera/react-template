@@ -7,3 +7,4 @@ import axios from "axios"
 type callbackFn = (response: any) => Promise<any>
 
 export const getPosts = (route: string, fn: callbackFn ) => axios.get(route).then(fn)
+export const getPost = (route: string, fn: callbackFn ) => axios.get(route).then(fn)

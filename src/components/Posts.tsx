@@ -1,5 +1,6 @@
 import { useQuery, UseQueryResult } from "react-query"
 import { getPosts } from "../api/useQuery"
+import { Link } from "react-router-dom";
 
 const fetchPosts = async (): Promise<any> => {
 
@@ -22,7 +23,16 @@ const Posts: React.FC = () => {
                 <h2>Posts</h2>
                 {
                     data.map((post: any) => {
-                        return <div key={post.id}>{post.title}</div>
+                        return (
+                            <>
+                                <Link 
+                                    to={`/posts/${post.id}`} 
+                                    key={post.id}>
+                                        {post.title}
+                                </Link>
+                                <br />
+                            </>
+                        )
                     })
                 }
             </div>
